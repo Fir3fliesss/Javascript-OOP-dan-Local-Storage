@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body class="bg-taskia-background-grey text-taskia-black font-poppins">
+    <div class="container min-h-screen mx-auto flex justify-center items-center">
+        <div id="LoginForm" class="flex flex-col bg-white rounded-[30px] gap-[30px] p-[50px] max-w-[500px] w-full">
+            <div class="flex justify-center">
+                <a href="signin.html">
+                    <img src="img/logo.svg" alt="logo">
+                </a>
+            </div>
+            <div class="flex flex-col gap-5">
+                <div>
+                    <h1 class="font-bold text-[22px] leading-[33px] mb-[3px]">Add New User</h1>
+                    <p class="text-taskia-grey text-sm leading-[21px]">Manage daily task easily</p>
+                </div>
+                <hr class="text-taskia-background-grey">
+                <form class="flex flex-col gap-[30px]" id="userForm">
+                    <div>
+                        <label for="username" class="font-semibold">Username</label>
+                        <div
+                            class="flex items-center p-[12px_16px] rounded-full border border-taskia-background-grey mt-[6px] focus-within:ring-2 focus-within:ring-taskia-purple">
+                            <div class="mr-[10px] w-6 h-6 flex items-center justify-center">
+                                <img src="img/icons/profile-circle.svg" alt="icon">
+                            </div>
+                            <input type="text"
+                                class="font-semibold placeholder:text-taskia-grey placeholder:font-normal focus:outline-none w-full "
+                                placeholder="Type your username" id="username" name="username" required>
+                        </div>
+                    </div>
+                    <button type="submit"
+                        class="flex gap-[10px] justify-center items-center text-white p-[12px_16px] h-12 font-semibold bg-gradient-to-b from-[#977FFF] to-[#6F4FFF] rounded-full w-full border border-taskia-background-grey">Sign
+                        Up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/User.js"></script>
+    <script src="js/addUser.js"></script>
+
+</body>
+
+</html>

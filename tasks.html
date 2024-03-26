@@ -1,0 +1,243 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body class="text-taskia-black font-poppins">
+    <section id="Dashboard" class="flex">
+        <div id="Sidebar"
+            class="w-[280px] flex flex-col gap-[30px] p-[30px] shrink-0 h-screen overflow-y-scroll no-scrollbar">
+            <div class="flex justify-center">
+                <img src="img/logo.svg" alt="logo">
+            </div>
+            <div class="general-menu flex flex-col gap-[18px]">
+                <h3 class="font-semibold text-sm leading-[21px]">GENERAL</h3>
+                <a href="dashboard-overview.html"
+                    class="flex items-center gap-[10px] p-[12px_16px] h-12 rounded-full border border-taskia-background-grey">
+                    <div class="w-6 h-6">
+                        <img src="img/icons/3dcube.svg" alt="icon">
+                    </div>
+                    <p class="font-semibold">Overview</p>
+                </a>
+                <a href="dashboard-my-people.html"
+                    class="flex items-center gap-[10px] p-[12px_16px] h-12 rounded-full border border-taskia-background-grey">
+                    <div class="w-6 h-6">
+                        <img src="img/icons/profile-2user.svg" alt="icon">
+                    </div>
+                    <p class="font-semibold">My People</p>
+                </a>
+                <a href="tasks.html"
+                    class="flex items-center gap-[10px] p-[12px_16px] h-12 rounded-full bg-taskia-light-orange drop-shadow-[0_10px_20px_rgba(255,216,141,0.50)]">
+                    <div class="w-6 h-6">
+                        <img src="img/icons/note-favorite.svg" alt="icon">
+                    </div>
+                    <p class="font-semibold">Manage Task</p>
+                </a>
+                <a href="dashboard-rewards.html"
+                    class="flex items-center gap-[10px] p-[12px_16px] h-12 rounded-full border border-taskia-background-grey">
+                    <div class="w-6 h-6">
+                        <img src="img/icons/crown.svg" alt="icon">
+                    </div>
+                    <p class="font-semibold">Rewards</p>
+                </a>
+                <a href="dashboard-ai-customs.html"
+                    class="flex items-center gap-[10px] p-[12px_16px] h-12 rounded-full border border-taskia-background-grey">
+                    <div class="w-6 h-6">
+                        <img src="img/icons/hierarchy-square-3.svg" alt="icon">
+                    </div>
+                    <p class="font-semibold">AI Customs</p>
+                </a>
+            </div>
+            <hr class="text-taskia-background-grey">
+            <div class="general-menu flex flex-col gap-[18px]">
+                <h3 class="font-semibold text-sm leading-[21px]">OTHERS</h3>
+                <a href="dashboard-settings.html"
+                    class="flex items-center gap-[10px] p-[12px_16px] h-12 rounded-full border border-taskia-background-grey">
+                    <div class="w-6 h-6">
+                        <img src="img/icons/setting-2.svg" alt="icon">
+                    </div>
+                    <p class="font-semibold">Settings</p>
+                </a>
+                <a href="dashboard-help-center.html"
+                    class="flex items-center gap-[10px] p-[12px_16px] h-12 rounded-full border border-taskia-background-grey">
+                    <div class="w-6 h-6">
+                        <img src="img/icons/message-question.svg" alt="icon">
+                    </div>
+                    <p class="font-semibold">Help Center</p>
+                </a>
+                <a href="signin.html"
+                    class="flex items-center gap-[10px] p-[12px_16px] h-12 rounded-full border border-taskia-background-grey">
+                    <div class="w-6 h-6">
+                        <img src="img/icons/forbidden-2.svg" alt="icon">
+                    </div>
+                    <p class="font-semibold">Logout</p>
+                </a>
+            </div>
+        </div>
+        <div id="Content"
+            class="flex flex-col bg-taskia-background-grey rounded-l-[60px] w-full h-screen overflow-y-scroll p-[50px] gap-[30px]">
+            <div class="dashboard-nav bg-white flex justify-between items-center w-full  p-4 rounded-[18px]">
+                <div
+                    class="dashboard-search flex items-center p-[12px_20px] rounded-full border border-taskia-background-grey w-[400px] h-12 focus-within:ring-2 focus-within:ring-taskia-purple">
+                    <input type="text"
+                        class="font-semibold placeholder:text-taskia-grey placeholder:font-normal focus:outline-none w-full"
+                        placeholder="Search by report name..." name="name" required>
+                    <button class="ml-[10px] w-6 h-6 flex items-center justify-center">
+                        <img src="img/icons/search-normal.svg" alt="icon">
+                    </button>
+                </div>
+                <div class="flex gap-[30px] items-center">
+                    <div class="flex gap-3 items-center">
+                        <a href=""
+                            class="flex justify-center items-center w-12 h-12 rounded-full border border-taskia-background-grey">
+                            <img src="img/icons/direct.svg" alt="icon">
+                        </a>
+                        <a href=""
+                            class="flex justify-center items-center w-12 h-12 rounded-full border border-taskia-background-grey">
+                            <img src="img/icons/activity.svg" alt="icon">
+                        </a>
+                    </div>
+                    <div class="flex h-12 border-x border-[0.5px] border-taskia-background-grey"></div>
+                    <div class="flex gap-3 items-center">
+                        <div class="*:text-right flex flex-col">
+                            <p class="text-taskia-grey text-sm w-full">Howdy,</span>
+                            <p class="font-bold">Jannellia</p>
+                        </div>
+                        <div class="w-12 h-12 rounded-full overflow-hidden">
+                            <img src="img/photo.png" class="object-cover h-full w-full" alt="photo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col gap-[30px]">
+                <div class="content-header flex justify-between items-center">
+                    <div>
+                        <h1 class="font-extrabold text-[30px] leading-[45px]">Manage Task</h1>
+                        <p class="leading-[21px] text-sm">Set the goals to grow your company</p>
+                    </div>
+                    <div class="flex gap-3 items-center">
+                        <a id="btnAddTaskHeader" href="add-task.html"
+                            class="flex gap-[10px] justify-center items-center text-white p-[12px_20px] h-12 font-semibold bg-gradient-to-b from-[#977FFF] to-[#6F4FFF] rounded-full w-full border border-taskia-background-grey">Add
+                            New Task</a>
+                    </div>
+                </div>
+                <!-- if task != 0 -->
+                <div class="flex flex-col gap-6" id="taskWrapper">
+                    <div class="flex justify-between bg-white p-5 w-full rounded-3xl">
+                        <div class="task-card flex flex-col gap-5">
+                            <div class="flex gap-3 items-center">
+                                <div
+                                    class="w-[50px] h-[50px] flex shrink-0 items-center justify-center bg-[#BDEBFF] rounded-full">
+                                    <img src="img/icons/ghost.svg" alt="icon">
+                                </div>
+                                <div class="flex flex-col">
+                                    <p class="font-bold text-lg leading-[27px]">Install Figma on Windows Server</p>
+                                    <p class="text-sm leading-[21px] text-taskia-grey">Created at 22 Agustus 2024</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4 font-semibold text-sm leading-[21px]">
+                                <div class="flex gap-1 items-center">
+                                    <div class="flex shrink-0 w-5 h-5">
+                                        <img src="img/icons/layer.svg" alt="icon">
+                                    </div>
+                                    <p>High</p>
+                                </div>
+                                <div class="flex gap-1 items-center">
+                                    <div class="flex shrink-0 w-5 h-5">
+                                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M4.29163 2.16663V18.8333" stroke="currentColor" stroke-width="2"
+                                                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path
+                                                d="M4.29163 3.83337H13.625C15.875 3.83337 16.375 5.08337 14.7916 6.66671L13.7916 7.66671C13.125 8.33337 13.125 9.41671 13.7916 10L14.7916 11C16.375 12.5834 15.7916 13.8334 13.625 13.8334H4.29163"
+                                                stroke="currentColor" stroke-width="2" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <p>In Progress</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-row items-center gap-x-3">
+                            <a href="#"
+                                class="my-auto font-semibold text-taskia-red border border-taskia-red p-[12px_20px] h-12 rounded-full">Delete</a>
+                            <a href="#"
+                                class="flex gap-[10px] justify-center items-center text-white p-[12px_20px] h-12 font-semibold bg-gradient-to-b from-[#977FFF] to-[#6F4FFF] rounded-full w-full border border-taskia-background-grey">Complete</a>
+                        </div>
+                    </div>
+                    <div class="flex justify-between bg-white p-5 w-full rounded-3xl">
+                        <div class="task-card flex flex-col gap-5">
+                            <div class="flex gap-3 items-center">
+                                <div
+                                    class="w-[50px] h-[50px] flex shrink-0 items-center justify-center bg-[#BDEBFF] rounded-full">
+                                    <img src="img/icons/ghost.svg" alt="icon">
+                                </div>
+                                <div class="flex flex-col">
+                                    <p class="font-bold text-lg leading-[27px]">Install Figma on Windows Server</p>
+                                    <p class="text-sm leading-[21px] text-taskia-grey">Created at 22 Agustus 2024</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4 font-semibold text-sm leading-[21px]">
+                                <div class="flex gap-1 items-center">
+                                    <div class="flex shrink-0 w-5 h-5">
+                                        <img src="img/icons/layer.svg" alt="icon">
+                                    </div>
+                                    <p>Medium</p>
+                                </div>
+                                <div class="flex gap-1 items-center text-taskia-green">
+                                    <div class="flex shrink-0 w-5 h-5">
+                                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M4.29163 2.16663V18.8333" stroke="currentColor" stroke-width="2"
+                                                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path
+                                                d="M4.29163 3.83337H13.625C15.875 3.83337 16.375 5.08337 14.7916 6.66671L13.7916 7.66671C13.125 8.33337 13.125 9.41671 13.7916 10L14.7916 11C16.375 12.5834 15.7916 13.8334 13.625 13.8334H4.29163"
+                                                stroke="currentColor" stroke-width="2" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <p>Completed</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-row items-center gap-x-3">
+                            <a href="#"
+                                class="my-auto font-semibold text-taskia-red border border-taskia-red p-[12px_20px] h-12 rounded-full">Delete</a>
+                            <a href="#"
+                                class="flex gap-[10px] justify-center items-center text-white p-[12px_20px] h-12 font-semibold bg-gradient-to-b from-[#977FFF] to-[#6F4FFF] rounded-full w-full border border-taskia-background-grey">Complete</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center items-center h-[420px] mx-auto" id="taskWrapperEmpty">
+                    <div
+                        class="bg-white p-[30px] gap-[30px] rounded-[30px] w-[350px] shrink-0 flex flex-col items-center">
+                        <div class="w-20 h-20 rounded-full bg-[#FEE7BA] flex shrink-0 items-center justify-center">
+                            <img src="img/icons/note-favorite-dark-orange.svg" alt="icon">
+                        </div>
+                        <div class="flex flex-col gap-[10px] text-center">
+                            <p class="font-bold text-xl leading-[30px]">Oops! No Task</p>
+                            <p class="text-sm text-taskia-grey leading-6">You need to create some tasks for<br>your
+                                employees to work on</p>
+                        </div>
+                        <div class="flex gap-2 w-full">
+                            <button
+                                class="p-[12px_20px] rounded-full border border-taskia-black w-full font-semibold">Import</button>
+                            <a href="dashboard-manage-task-add.html"
+                                class="p-[12px_20px] bg-gradient-to-b from-[#977FFF] to-[#6F4FFF] rounded-full w-full border border-taskia-background-grey font-semibold text-white text-center">Add
+                                New</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
